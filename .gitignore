@@ -1,0 +1,23 @@
+# Project playbook and working notes are ours, not the public repo's
+playbook.md
+docs/playbook*
+docs/private/
+
+# Build / tool state
+build/
+.venv/
+test_venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+compile_commands.json
+node_modules/
+.next/
+dist/
+
+# Secrets and per-machine state
+.env
+*.env
+config.env
+.claude/settings.local.json
