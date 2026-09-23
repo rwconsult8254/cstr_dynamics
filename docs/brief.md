@@ -20,8 +20,11 @@ article. A stepping stone with a hard scope, chosen so that it ends.
    zettels written during the project.
 4. Knowledge captured in the garden as the project proceeds.
 
-Stretch, only after 1–4: cascade temperature control with the jacket loop as
-secondary.
+Cascade temperature control — reactor temperature as the primary loop, jacket
+temperature as the secondary — is part of item 1 and item 2, not a stretch
+goal (decision 4, 2026-09-23). The Model must therefore carry a dynamic jacket
+energy balance with jacket temperature as a measured state, and the Simulator
+runs two PID instances.
 
 ## Out of scope
 
@@ -63,13 +66,20 @@ Open until Roger decides. Record the answer, the date, and a one-line reason.
 | 1 | Reuse strategy: fork `tank_dynamics`, copy the reusable layers, or extract a shared library | open — needed before Phase 2 |
 | 2 | Parameter source: one textbook example, or Roger's own numbers | open — first Phase 1 session |
 | 3 | Stepper: keep fixed-step, or adaptive / implicit | open — Phase 2, on evidence |
-| 4 | Control structure for v1: single loop on coolant flow; cascade as stretch | proposed — confirm before Phase 1 starts |
-| 5 | Volume: constant, level control deferred | proposed — confirm before Phase 1 starts |
+| 4 | Control structure for v1 | decided 2026-09-23 — cascade (reactor temperature → jacket temperature → coolant flow) is core, not stretch. Reason: without it the project is only a slightly more complex tank; cascade is the learning content |
+| 5 | Volume | decided 2026-09-23 — constant volume; level control deferred to the later list |
 | 6 | Repository visibility | decided — public (Roger created it 2026-09-23; confirmed via the GitHub API). Nothing private is committed; the playbook stays ignored |
 | 7 | Whether this project opens `wiki/process-engineering/`, and with which page | open — Phase 6 |
 
 Decided:
 
+- **2026-09-23 — Cascade control is core (decision 4); constant volume
+  (decision 5).** Roger: cascade is essential for this to be a learning
+  experience; otherwise it is simply a slightly more complex tank dynamics.
+  Volume stays constant. Consequences: the Phase 1 behaviour list and test
+  spec cover both loops; the stretch line in the definition of done is gone;
+  the playbook (private) still reads "cascade is stretch" and is superseded
+  on that point by this brief.
 - **2026-09-23 — Playbook accepted as written.** Roger reviewed the rendered
   playbook and had no comments; Phase 0 gate passed on the same day.
 - **2026-09-23 — Remote.** `git@github.com-rwconsult:rwconsult8254/cstr_dynamics.git`,
