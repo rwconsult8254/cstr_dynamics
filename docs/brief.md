@@ -34,9 +34,8 @@ learning on generated data; a new deployment stack.
 
 ## Guardrails
 
-- Eight weeks from the start of Phase 1; week-four review; scope is cut, never
-  extended. The Phase 1 start date and the review date are recorded in
-  `docs/state.md` when Phase 1 opens.
+- Eight weeks from the start of Phase 1 (2026-09-23); week-four review
+  2026-10-21; end 2026-11-18. Scope is cut, never extended.
 - One new idea per phase.
 - Parameters chosen in the first Phase 1 session and not reopened.
 - The Model class is the unit of work; API or dashboard changes beyond the
@@ -64,7 +63,7 @@ Open until Roger decides. Record the answer, the date, and a one-line reason.
 | # | Question | Status |
 | --- | --- | --- |
 | 1 | Reuse strategy: fork `tank_dynamics`, copy the reusable layers, or extract a shared library | open — needed before Phase 2 |
-| 2 | Parameter source: one textbook example, or Roger's own numbers | open — first Phase 1 session |
+| 2 | Parameter source | decided 2026-09-23 — own numbers, derived from design constraints (residence time, adiabatic temperature rise, cooling margin, stability criterion) and checked against the RAG. Reason: no textbook to hand; deriving them is the learning |
 | 3 | Stepper: keep fixed-step, or adaptive / implicit | open — Phase 2, on evidence |
 | 4 | Control structure for v1 | decided 2026-09-23 — cascade (reactor temperature → jacket temperature → coolant flow) is core, not stretch. Reason: without it the project is only a slightly more complex tank; cascade is the learning content |
 | 5 | Volume | decided 2026-09-23 — constant volume; level control deferred to the later list |
@@ -73,6 +72,14 @@ Open until Roger decides. Record the answer, the date, and a one-line reason.
 
 Decided:
 
+- **2026-09-23 — Parameters are our own (decision 2); Phase 1 opened.**
+  No textbook example to hand, so the parameter set is derived from design
+  constraints and made sensible by argument, with the RAG as the check. The
+  process-engineering RAG (Perry's ch. 19 reactor stability, ch. 8 reactor
+  temperature control, ch. 23 runaway) holds the theory and criteria but no
+  worked parameter set; it grounds the derivation, not the numbers.
+  Phase 1 start 2026-09-23; week-four review 2026-10-21; eight-week end
+  2026-11-18.
 - **2026-09-23 — Cascade control is core (decision 4); constant volume
   (decision 5).** Roger: cascade is essential for this to be a learning
   experience; otherwise it is simply a slightly more complex tank dynamics.
