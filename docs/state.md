@@ -16,8 +16,13 @@
   3. Behaviour list — what the simulation must show (steady state, setpoint
      step, disturbances, runaway, cascade vs single loop).
   4. Test spec in prose.
-  None started.
-- **Next:** derive the parameter set from constraints: pick a basis (first-
+  None started. Groundwork done 2026-09-23: three RAG-grounded Perry's
+  summaries in `docs/reference/` (ch. 19 stability, ch. 8 reactor control
+  and cascade, ch. 23 runaway) and the proposed parameter route in
+  `docs/phase1/parameter-route.md`, all mirrored as Google Docs in the Drive
+  `CSTR` folder, awaiting Roger's review.
+- **Next:** Roger reviews the four Drive docs; then derive the parameter set
+  from constraints: pick a basis (first-
   order A → B, liquid phase), reactor volume and residence time, feed
   temperature and concentration, then choose ΔH and E so the adiabatic rise
   and the heat-generation curve give a stable design point with a runaway

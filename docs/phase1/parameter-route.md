@@ -48,10 +48,13 @@ project.
    them so that at the design point conversion is high and the operating
    temperature is on the upper stable branch, and so that a lower
    (extinguished) branch exists. Perry's ch. 19 gives the first-order
-   steady-state relation and the critical temperature difference
-   ΔT_c = R T² / E as the bound on how far the reactor temperature may sit
-   above the jacket temperature for globally stable operation; use it as a
-   check on the pair (E, design point), not as a design target.
+   steady-state relation and a critical temperature difference ΔT_c, a
+   function of E and R, as the bound on how far the reactor temperature may
+   sit above the jacket temperature for globally stable operation. The
+   expression itself is lost in the RAG's text extraction; the usual form
+   ΔT_c = R T² / E is from training data and must be confirmed against a
+   printed copy before it enters the test spec. Use it as a check on the
+   pair (E, design point), not as a design target.
 
 6. **Size the cooling: UA, jacket volume, coolant inlet temperature, and
    nominal coolant flow.** Two constraints. First, at the design point the
@@ -83,7 +86,8 @@ project.
 
 RAG-grounded (Perry's, via the process-engineering RAG; see the three
 chapter summaries in `docs/reference/`): the first-order CSTR heat balance
-and multiplicity treatment, the ΔT_c stability criterion, the runaway
+and multiplicity treatment, the existence of the ΔT_c stability criterion
+(its algebraic form is not legible in the corpus), the runaway
 mechanism and the list of triggering upsets, the reactor-control guidance on
 lag-dominant stirred tanks and the circulating coolant loop.
 
