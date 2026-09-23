@@ -32,7 +32,8 @@ learning on generated data; a new deployment stack.
 ## Guardrails
 
 - Eight weeks from the start of Phase 1; week-four review; scope is cut, never
-  extended.
+  extended. The Phase 1 start date and the review date are recorded in
+  `docs/state.md` when Phase 1 opens.
 - One new idea per phase.
 - Parameters chosen in the first Phase 1 session and not reopened.
 - The Model class is the unit of work; API or dashboard changes beyond the
@@ -62,8 +63,8 @@ Open until Roger decides. Record the answer, the date, and a one-line reason.
 | 1 | Reuse strategy: fork `tank_dynamics`, copy the reusable layers, or extract a shared library | open — needed before Phase 2 |
 | 2 | Parameter source: one textbook example, or Roger's own numbers | open — first Phase 1 session |
 | 3 | Stepper: keep fixed-step, or adaptive / implicit | open — Phase 2, on evidence |
-| 4 | Control structure for v1: single loop on coolant flow; cascade as stretch | proposed, unconfirmed |
-| 5 | Volume: constant, level control deferred | proposed, unconfirmed |
+| 4 | Control structure for v1: single loop on coolant flow; cascade as stretch | proposed — confirm before Phase 1 starts |
+| 5 | Volume: constant, level control deferred | proposed — confirm before Phase 1 starts |
 | 6 | Repository visibility | Roger created the repo 2026-09-23; visibility as he set it |
 | 7 | Whether this project opens `wiki/process-engineering/`, and with which page | open — Phase 6 |
 

@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo \"$CLAUDE_FILE_PATHS\" | grep -qE '(^|/)(\\.env|.*\\.env|config\\.env|.*\\.key|.*\\.secret)$' && { echo 'Blocked: secrets file' >&2; exit 2; } || exit 0"
+            "command": "echo \"$CLAUDE_FILE_PATHS\" | tr ' ' '\\n' | grep -qE '(^|/)(\\.env|[^/]*\\.env|config\\.env|[^/]*\\.key|[^/]*\\.secret)$' && { echo 'Blocked: secrets file' >&2; exit 2; } || exit 0"
           }
         ]
       }

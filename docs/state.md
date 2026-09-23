@@ -9,4 +9,5 @@
 - **Next:** Roger reviews the scaffold. Then Phase 1 opens with the parameter
   decision (brief, decision 2) and the reuse decision (decision 1) queued for
   before Phase 2.
+- **Phase 1 start / week-four review:** not yet set.
 - **Blockers:** none.

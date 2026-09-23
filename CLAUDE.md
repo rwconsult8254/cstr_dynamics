@@ -7,8 +7,9 @@ Tennessee Eastman, later). The operational brief is [docs/brief.md](docs/brief.m
 read it first. It fixes the goal, the definition of done, the scope guardrails,
 the staging, and the decisions still open.
 
-A private `playbook.md` may exist at the repo root (gitignored). If it is
-present, read it after the brief; it is the fuller statement of how we work.
+A private `playbook.md` may exist at the repo root (gitignored). If present,
+read it after the brief. The brief and this file are sufficient on their own;
+the playbook adds rationale, not rules.
 
 ## Predecessors — read before building
 
@@ -69,7 +70,8 @@ A phase does not start until the previous gate (in the brief) is passed.
 ## Where things go
 
 - **This repo** — code, tests, and project-operational docs (`docs/brief.md`,
-  `docs/state.md`, `docs/lessons.md`, plans). Remote:
+  `docs/state.md`, `docs/lessons.md`). Plans go in `docs/plans/NN-topic.md`;
+  the matching branch is `plan/NN-topic`. Remote:
   `git@github.com-rwconsult:rwconsult8254/cstr_dynamics.git`. Commit as work
   proceeds; a task is not done until it is committed.
 - **Zettels** are Roger's voice — never draft one. Reference notes that become
@@ -83,4 +85,8 @@ A phase does not start until the previous gate (in the brief) is passed.
 - **uv, not pip.** `uv sync --extra dev`, `uv run pytest`.
 - C++ toolchain, CMake, GSL, Eigen, pybind11, scikit-build-core — added in
   Phase 2, mirroring `tank_dynamics`. Nothing is installed ahead of need.
-- No GPU work. No local LLM tier.
+- This project does no GPU or local-LLM work of its own. The RAG MCP servers
+  use the GPU and Ollama internally; that is theirs, not ours.
+- `.mcp.json` and the ssh alias `github.com-rwconsult` are newton-specific.
+  Away from newton the RAGs are unreachable: offline sessions are for writing,
+  per `~/garden/way-of-working/way-of-working.md` §7.
