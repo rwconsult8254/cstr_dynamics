@@ -65,7 +65,7 @@ Open until Roger decides. Record the answer, the date, and a one-line reason.
 | 3 | Stepper: keep fixed-step, or adaptive / implicit | open — Phase 2, on evidence |
 | 4 | Control structure for v1: single loop on coolant flow; cascade as stretch | proposed — confirm before Phase 1 starts |
 | 5 | Volume: constant, level control deferred | proposed — confirm before Phase 1 starts |
-| 6 | Repository visibility | Roger created the repo 2026-09-23; visibility as he set it |
+| 6 | Repository visibility | decided — public (Roger created it 2026-09-23; confirmed via the GitHub API). Nothing private is committed; the playbook stays ignored |
 | 7 | Whether this project opens `wiki/process-engineering/`, and with which page | open — Phase 6 |
 
 Decided:
