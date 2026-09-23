@@ -70,6 +70,8 @@ Open until Roger decides. Record the answer, the date, and a one-line reason.
 
 Decided:
 
+- **2026-09-23 — Playbook accepted as written.** Roger reviewed the rendered
+  playbook and had no comments; Phase 0 gate passed on the same day.
 - **2026-09-23 — Remote.** `git@github.com-rwconsult:rwconsult8254/cstr_dynamics.git`,
   alongside `tank_dynamics` and the website, rather than the rogerwibrew
   account first proposed. Reason: keeps the portfolio projects together.
