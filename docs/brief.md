@@ -68,7 +68,7 @@ Open until Roger decides. Record the answer, the date, and a one-line reason.
 | 4 | Control structure for v1 | decided 2026-09-23 — cascade (reactor temperature → jacket temperature → coolant flow) is core, not stretch. Reason: without it the project is only a slightly more complex tank; cascade is the learning content |
 | 5 | Volume | decided 2026-09-23 — constant volume; level control deferred to the later list |
 | 6 | Repository visibility | decided — public (Roger created it 2026-09-23; confirmed via the GitHub API). Nothing private is committed; the playbook stays ignored |
-| 7 | Whether this project opens `wiki/process-engineering/`, and with which page | open — Phase 6 |
+| 7 | Which page this project adds to `wiki/process-engineering/` | open — Phase 6. The wiki was opened on 2026-09-23 by the molsieve_adsorption project (garden commit 1b3a7fb), so the question is no longer whether but which page |
 
 Decided:
 
