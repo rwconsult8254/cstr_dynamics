@@ -3,9 +3,12 @@
 *Updated at the end of every session. Read at the start of every session.*
 
 - **Phase:** 1 — physics on paper. Opened 2026-09-23.
-- **Last session:** 2026-09-23. Scaffold created: CLAUDE.md, README, brief,
-  state, lessons, `.mcp.json`, uv project, explorer and reviewer subagents,
-  hooks.
+- **Last session:** 2026-09-23 (second session of the day). Closed decisions
+  2, 4, 5; opened Phase 1 and set the dates; wrote three RAG-grounded Perry's
+  summaries (`docs/reference/`) and the parameter route
+  (`docs/phase1/parameter-route.md`); mirrored all four to the Drive `CSTR`
+  folder as Google Docs; garden decisions log updated; first lesson recorded
+  (formulae are not RAG-grounded unless the chunk shows them legibly).
 - **Decisions 2, 4, 5 closed 2026-09-23:** own parameters derived from
   design constraints; cascade control is core, not stretch; volume is
   constant. Recorded in the brief and the garden decisions log.
@@ -21,8 +24,10 @@
   and cascade, ch. 23 runaway) and the proposed parameter route in
   `docs/phase1/parameter-route.md`, all mirrored as Google Docs in the Drive
   `CSTR` folder, awaiting Roger's review.
-- **Next:** Roger reviews the four Drive docs; then derive the parameter set
-  from constraints: pick a basis (first-
+- **Next session:** start by hearing Roger's review of the four Drive docs
+  (comments may be in the Google Docs). Confirm the ΔTc form against a
+  printed Perry's if one is available. Then derive the parameter set from
+  constraints: pick a basis (first-
   order A → B, liquid phase), reactor volume and residence time, feed
   temperature and concentration, then choose ΔH and E so the adiabatic rise
   and the heat-generation curve give a stable design point with a runaway
